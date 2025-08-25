@@ -42,6 +42,41 @@ This makes the scan much faster
 
 # requirements for stage 2
   python3,socket library and threading library.
+
+# Stage 3 
+i have added stage in the project and it is ascanner to scan UDP ports only 
+
+it only scans udp ports and give you simple information that which port is open and which is not 
+
+its not that advance from stage 2 but in this stage we understand that how to scan a udp port only 
+
+it gives us a simple understanding that how the scan of udp is different from TCP
+
+# difference between TCP and UDP scan
+
+TCP === TCP is connection-oriented.
+
+A TCP scan usually tries to establish a connection with the target port using the three-way handshake (SYN → SYN/ACK → ACK).
+
+If the port responds with SYN/ACK, it’s open.
+
+If it responds with RST, it’s closed.
+
+If there’s no response, it might be filtered (firewall blocking).
+
+UDP=== UDP is connectionless (no handshake).
+
+A UDP scan just sends a UDP packet to a port.
+
+If it gets a response (like a proper application reply), the port is open.
+
+If it gets an ICMP “Port Unreachable” message, the port is closed.
+
+If there’s no response, it might be open, or filtered (uncertain).
+
+# requirements
+
+python3, socket library
   
 # contribution
 this is only for educational purpose but feel free to suggest any changes via issues and pull requests
