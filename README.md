@@ -77,6 +77,20 @@ If there’s no response, it might be open, or filtered (uncertain).
 # requirements
 
 python3, socket library
+
+# Stage 4
+
+in this stage i have just added TCP and UDP scanning together ... with options to scan weather it is TCP ,UCP or b
+
+both
+
+i have used ***ThreadpoolExecutor*** to increase the speed and eficiency ... instead of scanning every port
+
+seperatly it scans simultaneously.
+
+# Requirements 
+
+python3, socket and time library and ThreadPoolExecutor for efficiency
   
 # contribution
 this is only for educational purpose but feel free to suggest any changes via issues and pull requests
